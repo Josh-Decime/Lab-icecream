@@ -1,0 +1,17 @@
+
+
+.bg-creamy {
+    background-color: #c4b593;
+}
+.bg-light-cream {
+    background-color: #e0d6bf;
+}
+
+.cat-card {
+    background-color: #c4b593;
+    border-radius: 25px;
+}
+
+.rnd-img {
+    border-radius: 25px 25px 25px 25px;
+}

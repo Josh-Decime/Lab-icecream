@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+    <script id="debug-script" src="https://cdn.jsdelivr.net/gh/MickShannahan/style-debug@latest/debug.min.js" defer></script>
+    <title>Document</title>
+</head>
+        <!-- debug -->
+<body class="">
+    <script src="app.js"></script>
+    <header class="container-fluid">
+        <section class="row bg-creamy">
+            <div>
+                <h3>Icecream kittens</h3>
+            </div>
+        </section>
+    </header>
+
+    <main class="container-fluid bg-light-cream">
+        <section class="row d-flex">
+            <section class="col-7 ">
+                <section class="container-fluid d-flex">
+                    <section class="row">
+                        <div class="col-5 m-3 pt-2 cat-card text-center" onclick="buyCat('Vanilla')">
+                            <img class="img-fluid rnd-img" src="Vanilla-cat.png" alt="Vanilla Cat">
+                            <span>Vanilla Cat</span>
+                            <span>$8</span>
+                        </div>
+
+                        <div class="col-5 m-3 pt-2 cat-card text-center" onclick="buyCat('Strawberry')">
+                            <img class="img-fluid rnd-img" src="Strawberry-cat.png" alt="Strawberry Cat">
+                            <span>Strawberry Cat</span>
+                            <span>$7</span>
+                        </div>
+
+                        <div class="col-5 m-3 pt-2 cat-card text-center" onclick="buyCat('Mint')">
+                            <img class="img-fluid rnd-img" src="Mint-cat.png" alt="Mint Cat">
+                            <span>Mint Cat</span>
+                            <span>$8</span>
+                        </div>
+
+                        <div class="col-5 m-3 pt-2 cat-card text-center" onclick="buyCat('Chocolate')">
+                            <img class="img-fluid rnd-img" src="Chocolate-cat.png" alt="Chocolate Cat">
+                            <span>Chocolate Cat</span>
+                            <span>$6</span>
+                        </div>
+                    </section>
+                    
+                </section>
+                
+            </section>
+            <section class="col-4 bg-creamy m-3 rnd-img">
+                <h1 class="text-center">Cart</h1>
+                <div id="cart">
+                    <div class="d-flex justify-content-around align-items-baseline">
+                        <span>Cats in Cart</span>
+                        <span>x0</span>
+                        <span>$$$</span>
+                        <button onclick="goodbyeCat('${cat.name}')" class="btn"><i class="mdi mdi-delete"></i></button>
+                    </div>
+                    
+                </div>
+                <p class="text-end">Total: $<span id="total">0</span></p>
+
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
