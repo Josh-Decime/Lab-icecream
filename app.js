@@ -64,4 +64,8 @@ function updateTotal() {
 
 function goodbyeCat(catName) {
     console.log('removing', catName)
+    let foundCat = catArr.find(cat => cat.name == catName)
+    console.log(foundCat)
+    foundCat.amount--
+    updateCart()
 }
